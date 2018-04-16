@@ -21,6 +21,7 @@ namespace GraficaTesina
         {
             try
             {
+
                 this.Colore = colore;
                 string pathFile = downloadImage();
                 this.FileName = Path.GetFileName(pathFile);
