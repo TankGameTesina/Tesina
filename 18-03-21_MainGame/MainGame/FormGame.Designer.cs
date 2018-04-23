@@ -29,12 +29,18 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGame));
             this.picTank = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tmrSparo = new System.Windows.Forms.Timer(this.components);
             this.picEnemy = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.canvas1 = new SpriteCanvas.Canvas();
+            this.timer = new System.Windows.Forms.Timer(this.components);
+            this.AnimationTimer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.picTank)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picEnemy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // picTank
@@ -58,7 +64,7 @@
             // tmrSparo
             // 
             this.tmrSparo.Enabled = true;
-            this.tmrSparo.Interval = 10;
+            this.tmrSparo.Interval = 1;
             this.tmrSparo.Tick += new System.EventHandler(this.tmrSparo_Tick);
             // 
             // picEnemy
@@ -70,12 +76,42 @@
             this.picEnemy.TabIndex = 3;
             this.picEnemy.TabStop = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(232, 188);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(297, 192);
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox1_Paint);
+            // 
+            // canvas1
+            // 
+            this.canvas1.ImageLayout = new System.Drawing.Point(10, 6);
+            this.canvas1.Location = new System.Drawing.Point(611, 244);
+            this.canvas1.Name = "canvas1";
+            this.canvas1.PictureFile = ((System.Drawing.Image)(resources.GetObject("canvas1.PictureFile")));
+            this.canvas1.Size = new System.Drawing.Size(150, 150);
+            this.canvas1.TabIndex = 5;
+            // 
+            // timer
+            // 
+            this.timer.Interval = 1;
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            // 
+            // AnimationTimer
+            // 
+            this.AnimationTimer.Interval = 33;
+            this.AnimationTimer.Tick += new System.EventHandler(this.AnimationTimer_Tick);
+            // 
             // FormGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(949, 507);
+            this.Controls.Add(this.canvas1);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.picEnemy);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.picTank);
@@ -85,6 +121,7 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.picTank)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picEnemy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -95,6 +132,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer tmrSparo;
         private System.Windows.Forms.PictureBox picEnemy;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private SpriteCanvas.Canvas canvas1;
+        private System.Windows.Forms.Timer timer;
+        private System.Windows.Forms.Timer AnimationTimer;
     }
 }
 

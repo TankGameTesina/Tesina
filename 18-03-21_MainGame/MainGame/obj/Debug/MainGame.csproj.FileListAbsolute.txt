@@ -20,3 +20,16 @@ D:\Tesina\MainGame\MainGame\obj\Debug\MainGame.pdb
 C:\Users\sghirini\Desktop\Repo\18-03-21_MainGame\MainGame\bin\Debug\MainGame.exe.config
 C:\Users\sghirini\Desktop\Repo\18-03-21_MainGame\MainGame\obj\Debug\MainGame.exe
 C:\Users\sghirini\Desktop\Repo\18-03-21_MainGame\MainGame\obj\Debug\MainGame.pdb
+C:\Users\smichelo1\Source\Repos\Tesina\18-03-21_MainGame\MainGame\bin\Debug\MainGame.exe.config
+C:\Users\smichelo1\Source\Repos\Tesina\18-03-21_MainGame\MainGame\obj\Debug\MainGame.exe
+C:\Users\smichelo1\Source\Repos\Tesina\18-03-21_MainGame\MainGame\obj\Debug\MainGame.pdb
+C:\Users\smichelo1\Source\Repos\Tesina\18-03-21_MainGame\MainGame\bin\Debug\MainGame.exe
+C:\Users\smichelo1\Source\Repos\Tesina\18-03-21_MainGame\MainGame\bin\Debug\MainGame.pdb
+C:\Users\smichelo1\Source\Repos\Tesina\18-03-21_MainGame\MainGame\obj\Debug\MainGame.csprojResolveAssemblyReference.cache
+C:\Users\smichelo1\Source\Repos\Tesina\18-03-21_MainGame\MainGame\obj\Debug\MainGame.FormGame.resources
+C:\Users\smichelo1\Source\Repos\Tesina\18-03-21_MainGame\MainGame\obj\Debug\MainGame.Properties.Resources.resources
+C:\Users\smichelo1\Source\Repos\Tesina\18-03-21_MainGame\MainGame\obj\Debug\MainGame.csproj.GenerateResource.Cache
+C:\Users\smichelo1\Source\Repos\Tesina\18-03-21_MainGame\MainGame\bin\Debug\SpriteCanvas.dll
+C:\Users\smichelo1\Source\Repos\Tesina\18-03-21_MainGame\MainGame\bin\Debug\SpriteWorld.dll
+C:\Users\smichelo1\Source\Repos\Tesina\18-03-21_MainGame\MainGame\bin\Debug\SpriteCanvas.pdb
+C:\Users\smichelo1\Source\Repos\Tesina\18-03-21_MainGame\MainGame\bin\Debug\SpriteWorld.pdb
