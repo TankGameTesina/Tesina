@@ -27,8 +27,6 @@ namespace MainGame
 
         Point puntoInizioSparo;
 
-        public SpriteWorld.World myWorld = new SpriteWorld.World();
-
         public FormGame()
         {
             InitializeComponent();
@@ -49,41 +47,9 @@ namespace MainGame
             generateEnemy();
 
 
-            //create two viewports, one default size and origin
-            myWorld.CreateViewport(pictureBox1, Properties.Resources.Back);
-            //create some sprites
-            CreateTestObjects();
-
-            //main loop timer
-            timer.Start();
-            //animation loop timer
-            AnimationTimer.Start();
         }
 
-        private void CreateTestObjects()
-        {
-            //animated
-            myWorld.AddSprite(canvas1, new Point(20, 60), new Point(0, 59), 30, true);
-            //also animated
-            myWorld.AddSprite(canvas1, new Point(175, 60), new Point(0, 59), 60, true);
-            //static
-            myWorld.AddSprite(canvas1, new Point(80, 50));
-            //static
-            myWorld.AddSprite(canvas1, new Point(70, 80));
 
-        }
-
-        private void timer_Tick(object sender, System.EventArgs e)
-        {
-            //check if we need some rendering
-            myWorld.RenderingLoop();
-        }
-
-        private void AnimationTimer_Tick(object sender, System.EventArgs e)
-        {
-            //we animate sprites here
-            myWorld.UpdateAnimated();
-        }
 
 
         private void generateEnemy()
@@ -205,7 +171,6 @@ namespace MainGame
                 newColpo = false;
             }
             formGraphics = this.CreateGraphics();
-            formGraphics.Clear(Color.Black);
             Rectangle colpo;
             foreach(Bullet bullet in bullets)
             {
@@ -220,14 +185,6 @@ namespace MainGame
                 bullet.distanza += 10;
             }
 
-        }
-
-        private void pictureBox1_Paint(object sender, PaintEventArgs e)
-        {
-            //this is used only when we have some area that needs to be 
-            // redrawn like when we start, or min. then restore app, or 
-            // bring it to front from behind some other app
-            myWorld.RePaint(sender, e.Graphics, e.ClipRectangle);
         }
     }
 }

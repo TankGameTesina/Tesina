@@ -1,11 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainGame", "MainGame\MainGame.csproj", "{FA5A4BA0-6D66-49F2-B1F9-29F0CB86359D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpriteCanvas", "..\..\..\..\Desktop\Tesina_26-03-2018\Sprites_src\SpriteCanvas\SpriteCanvas.csproj", "{2E76EE7A-85C6-40CE-9CF6-EAC7026FC3C1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +15,6 @@ Global
 		{FA5A4BA0-6D66-49F2-B1F9-29F0CB86359D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA5A4BA0-6D66-49F2-B1F9-29F0CB86359D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA5A4BA0-6D66-49F2-B1F9-29F0CB86359D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2E76EE7A-85C6-40CE-9CF6-EAC7026FC3C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2E76EE7A-85C6-40CE-9CF6-EAC7026FC3C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2E76EE7A-85C6-40CE-9CF6-EAC7026FC3C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2E76EE7A-85C6-40CE-9CF6-EAC7026FC3C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
