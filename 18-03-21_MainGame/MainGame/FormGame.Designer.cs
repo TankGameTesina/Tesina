@@ -33,16 +33,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tmrSparo = new System.Windows.Forms.Timer(this.components);
             this.picEnemy = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picTank)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picEnemy)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // picTank
             // 
             this.picTank.BackColor = System.Drawing.Color.Transparent;
-            this.picTank.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picTank.Location = new System.Drawing.Point(121, 130);
             this.picTank.Name = "picTank";
             this.picTank.Size = new System.Drawing.Size(50, 50);
@@ -61,7 +58,7 @@
             // tmrSparo
             // 
             this.tmrSparo.Enabled = true;
-            this.tmrSparo.Interval = 1;
+            this.tmrSparo.Interval = 10;
             this.tmrSparo.Tick += new System.EventHandler(this.tmrSparo_Tick);
             // 
             // picEnemy
@@ -73,21 +70,12 @@
             this.picEnemy.TabIndex = 3;
             this.picEnemy.TabStop = false;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(237, 213);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(330, 194);
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            // 
             // FormGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(949, 507);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.picEnemy);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.picTank);
@@ -97,7 +85,6 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.picTank)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picEnemy)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -108,7 +95,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer tmrSparo;
         private System.Windows.Forms.PictureBox picEnemy;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

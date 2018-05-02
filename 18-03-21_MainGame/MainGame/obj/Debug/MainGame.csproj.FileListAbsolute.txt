@@ -7,7 +7,6 @@ C:\Users\smichelo1\Desktop\MainGame\MainGame\obj\Debug\MainGame.Properties.Resou
 C:\Users\smichelo1\Desktop\MainGame\MainGame\obj\Debug\MainGame.csproj.GenerateResource.Cache
 C:\Users\smichelo1\Desktop\MainGame\MainGame\obj\Debug\MainGame.exe
 C:\Users\smichelo1\Desktop\MainGame\MainGame\obj\Debug\MainGame.pdb
-C:\Users\smichelo1\Desktop\MainGame\MainGame\obj\Debug\MainGame.csproj.CoreCompileInputs.cache
 D:\Tesina\MainGame\MainGame\bin\Debug\MainGame.exe.config
 D:\Tesina\MainGame\MainGame\bin\Debug\MainGame.exe
 D:\Tesina\MainGame\MainGame\bin\Debug\MainGame.pdb
@@ -17,17 +16,3 @@ D:\Tesina\MainGame\MainGame\obj\Debug\MainGame.Properties.Resources.resources
 D:\Tesina\MainGame\MainGame\obj\Debug\MainGame.csproj.GenerateResource.Cache
 D:\Tesina\MainGame\MainGame\obj\Debug\MainGame.exe
 D:\Tesina\MainGame\MainGame\obj\Debug\MainGame.pdb
-C:\Users\sghirini\Desktop\Repo\18-03-21_MainGame\MainGame\bin\Debug\MainGame.exe.config
-C:\Users\sghirini\Desktop\Repo\18-03-21_MainGame\MainGame\obj\Debug\MainGame.exe
-C:\Users\sghirini\Desktop\Repo\18-03-21_MainGame\MainGame\obj\Debug\MainGame.pdb
-C:\Users\smichelo1\Source\Repos\Tesina\18-03-21_MainGame\MainGame\bin\Debug\MainGame.exe.config
-C:\Users\smichelo1\Source\Repos\Tesina\18-03-21_MainGame\MainGame\obj\Debug\MainGame.exe
-C:\Users\smichelo1\Source\Repos\Tesina\18-03-21_MainGame\MainGame\obj\Debug\MainGame.pdb
-C:\Users\smichelo1\Source\Repos\Tesina\18-03-21_MainGame\MainGame\bin\Debug\MainGame.exe
-C:\Users\smichelo1\Source\Repos\Tesina\18-03-21_MainGame\MainGame\bin\Debug\MainGame.pdb
-C:\Users\smichelo1\Source\Repos\Tesina\18-03-21_MainGame\MainGame\obj\Debug\MainGame.csprojResolveAssemblyReference.cache
-C:\Users\smichelo1\Source\Repos\Tesina\18-03-21_MainGame\MainGame\obj\Debug\MainGame.FormGame.resources
-C:\Users\smichelo1\Source\Repos\Tesina\18-03-21_MainGame\MainGame\obj\Debug\MainGame.Properties.Resources.resources
-C:\Users\smichelo1\Source\Repos\Tesina\18-03-21_MainGame\MainGame\obj\Debug\MainGame.csproj.GenerateResource.Cache
-C:\Users\smichelo1\Source\Repos\Tesina\18-03-21_MainGame\MainGame\bin\Debug\SpriteCanvas.pdb
-C:\Users\smichelo1\Source\Repos\Tesina\18-03-21_MainGame\MainGame\bin\Debug\SpriteWorld.pdb

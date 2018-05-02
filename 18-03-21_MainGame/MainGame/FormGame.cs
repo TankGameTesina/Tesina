@@ -26,7 +26,6 @@ namespace MainGame
         List<Bullet> bullets = new List<Bullet>();
 
         Point puntoInizioSparo;
-
         public FormGame()
         {
             InitializeComponent();
@@ -44,13 +43,10 @@ namespace MainGame
             this.MouseClick += mouseClick;
             tank = genTank.GetTank();
             settato = true;
+
             generateEnemy();
 
-
         }
-
-
-
 
         private void generateEnemy()
         {
@@ -171,6 +167,7 @@ namespace MainGame
                 newColpo = false;
             }
             formGraphics = this.CreateGraphics();
+            formGraphics.Clear(Color.Black);
             Rectangle colpo;
             foreach(Bullet bullet in bullets)
             {
