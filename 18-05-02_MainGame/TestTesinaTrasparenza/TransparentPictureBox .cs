@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Drawing;
+using System.Drawing.Imaging;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
 namespace TestTesinaTrasparenza
@@ -8,6 +10,11 @@ namespace TestTesinaTrasparenza
     {
         private Timer refresher;
         private Image _image = null;
+        public Color colore = new Color();
+        public Point OldPos = new Point();
+        public int OldGrade = 0;
+        public Point pos = new Point();
+        public int grade = 0;
 
         public TransparentPictureBox()
         {
@@ -35,8 +42,11 @@ namespace TestTesinaTrasparenza
         protected override void OnPaint(PaintEventArgs e)
         {
             if (_image != null)
+            {
                 e.Graphics.DrawImage(_image, (Width / 2) - (_image.Width / 2), (Height / 2) - (_image.Height / 2));
+            }
         }
+
 
         protected override void OnPaintBackground(PaintEventArgs e)
         {

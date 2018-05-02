@@ -7,3 +7,12 @@ C:\Users\Davide\Desktop\TestTesinaTrasparenza\TestTesinaTrasparenza\obj\Debug\Te
 C:\Users\Davide\Desktop\TestTesinaTrasparenza\TestTesinaTrasparenza\obj\Debug\TestTesinaTrasparenza.csproj.GenerateResource.Cache
 C:\Users\Davide\Desktop\TestTesinaTrasparenza\TestTesinaTrasparenza\obj\Debug\TestTesinaTrasparenza.exe
 C:\Users\Davide\Desktop\TestTesinaTrasparenza\TestTesinaTrasparenza\obj\Debug\TestTesinaTrasparenza.pdb
+C:\Users\smichelo1\Source\Repos\Tesina2\18-05-02_MainGame\TestTesinaTrasparenza\bin\Debug\TestTesinaTrasparenza.exe.config
+C:\Users\smichelo1\Source\Repos\Tesina2\18-05-02_MainGame\TestTesinaTrasparenza\obj\Debug\TestTesinaTrasparenza.exe
+C:\Users\smichelo1\Source\Repos\Tesina2\18-05-02_MainGame\TestTesinaTrasparenza\obj\Debug\TestTesinaTrasparenza.pdb
+C:\Users\smichelo1\Source\Repos\Tesina2\18-05-02_MainGame\TestTesinaTrasparenza\bin\Debug\TestTesinaTrasparenza.exe
+C:\Users\smichelo1\Source\Repos\Tesina2\18-05-02_MainGame\TestTesinaTrasparenza\bin\Debug\TestTesinaTrasparenza.pdb
+C:\Users\smichelo1\Source\Repos\Tesina2\18-05-02_MainGame\TestTesinaTrasparenza\obj\Debug\TestTesinaTrasparenza.csprojResolveAssemblyReference.cache
+C:\Users\smichelo1\Source\Repos\Tesina2\18-05-02_MainGame\TestTesinaTrasparenza\obj\Debug\TestTesinaTrasparenza.Form1.resources
+C:\Users\smichelo1\Source\Repos\Tesina2\18-05-02_MainGame\TestTesinaTrasparenza\obj\Debug\TestTesinaTrasparenza.Properties.Resources.resources
+C:\Users\smichelo1\Source\Repos\Tesina2\18-05-02_MainGame\TestTesinaTrasparenza\obj\Debug\TestTesinaTrasparenza.csproj.GenerateResource.Cache

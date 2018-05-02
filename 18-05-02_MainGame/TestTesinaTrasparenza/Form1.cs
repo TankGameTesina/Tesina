@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,6 +18,7 @@ namespace TestTesinaTrasparenza
         List<Bitmap> tank;
         List<Bitmap> tankEnemy;
         double grade = 0;
+        double oldGrade = -1;
         int spostamento = 5;
         int centroCarroX;
         int centroCarroY;
@@ -43,7 +46,9 @@ namespace TestTesinaTrasparenza
             settato = true;
 
             generateEnemy();
-        }
+
+
+            }
 
         private void generateEnemy()
         {
@@ -72,6 +77,15 @@ namespace TestTesinaTrasparenza
             return Math.PI * angle / 180.0;
         }
 
+        private Color getColorPunta(Point center)
+        {
+            int r = 25;
+            double x = center.X + r * Math.Cos(DegreeToRadian(grade));
+            double y = center.Y + r * Math.Sin(DegreeToRadian(grade));
+            label2.Text = "X: " + x + "|Y: " + y;
+            return GetColorAt(new Point(Convert.ToInt32(x), Convert.ToInt32(y)));
+        }
+
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
             double xdegree = DegreeToRadian(grade);
@@ -83,11 +97,13 @@ namespace TestTesinaTrasparenza
                     int xw = Convert.ToInt32(picTank.Location.X + (spostamento * sin));
                     int yw = Convert.ToInt32(picTank.Location.Y + (spostamento * cos));
                     picTank.Location = new Point(xw, yw);
+                    label3.Text = getColorPunta(new Point(xw + 50, yw + 50)).ToString();
                     break;
                 case Keys.S:
                     int xs = Convert.ToInt32(picTank.Location.X - (spostamento * sin));
                     int ys = Convert.ToInt32(picTank.Location.Y - (spostamento * cos));
                     picTank.Location = new Point(xs, ys);
+                    label3.Text = getColorPunta(new Point(xs + 50, xs + 50)).ToString();
                     break;
             }
             return base.ProcessCmdKey(ref msg, keyData);
@@ -116,12 +132,40 @@ namespace TestTesinaTrasparenza
             }
         }
 
+        [DllImport("gdi32.dll", CharSet = CharSet.Auto, SetLastError = true, ExactSpelling = true)]
+        public static extern int BitBlt(IntPtr hDC, int x, int y, int nWidth, int nHeight, IntPtr hSrcDC, int xSrc, int ySrc, int dwRop);
+        Bitmap screenPixel = new Bitmap(1, 1, PixelFormat.Format32bppArgb);
+
+        public Color GetColorAt(Point location)
+        {
+            using (Graphics gdest = Graphics.FromImage(screenPixel))
+            {
+                using (Graphics gsrc = Graphics.FromHwnd(IntPtr.Zero))
+                {
+                    IntPtr hSrcDC = gsrc.GetHdc();
+                    IntPtr hDC = gdest.GetHdc();
+                    int retval = BitBlt(hDC, 0, 0, 1, 1, hSrcDC, location.X, location.Y, (int)CopyPixelOperation.SourceCopy);
+                    gdest.ReleaseHdc();
+                    gsrc.ReleaseHdc();
+                }
+            }
+
+            return screenPixel.GetPixel(0, 0);
+        }
+
+
         private void tmrMovimento_Tick(object sender, EventArgs e)
         {
             if (settato)
             {
-                picTank.Image = tank[Convert.ToInt32(grade)];
-                grade++;
+                if(grade != oldGrade)
+                {
+                    picTank.SuspendLayout();
+                    picTank.Image = tank[Convert.ToInt32(grade)];
+                    oldGrade = grade;
+                }
+                //label3.Text = "X: " + picTank.Location.X + "| Y: " + picTank.Location.Y;
+                //label2.Text = picTank.colore.ToString();
             }
         }
 
