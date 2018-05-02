@@ -16,3 +16,6 @@ D:\Tesina\MainGame\MainGame\obj\Debug\MainGame.Properties.Resources.resources
 D:\Tesina\MainGame\MainGame\obj\Debug\MainGame.csproj.GenerateResource.Cache
 D:\Tesina\MainGame\MainGame\obj\Debug\MainGame.exe
 D:\Tesina\MainGame\MainGame\obj\Debug\MainGame.pdb
+C:\Users\smichelo1\Source\Repos\Tesina2\18-03-21_MainGame\MainGame\bin\Debug\MainGame.exe.config
+C:\Users\smichelo1\Source\Repos\Tesina2\18-03-21_MainGame\MainGame\obj\Debug\MainGame.exe
+C:\Users\smichelo1\Source\Repos\Tesina2\18-03-21_MainGame\MainGame\obj\Debug\MainGame.pdb
