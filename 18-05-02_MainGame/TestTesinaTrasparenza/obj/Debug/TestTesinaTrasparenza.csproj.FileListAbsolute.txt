@@ -1,0 +1,9 @@
+C:\Users\Davide\Desktop\TestTesinaTrasparenza\TestTesinaTrasparenza\bin\Debug\TestTesinaTrasparenza.exe.config
+C:\Users\Davide\Desktop\TestTesinaTrasparenza\TestTesinaTrasparenza\bin\Debug\TestTesinaTrasparenza.exe
+C:\Users\Davide\Desktop\TestTesinaTrasparenza\TestTesinaTrasparenza\bin\Debug\TestTesinaTrasparenza.pdb
+C:\Users\Davide\Desktop\TestTesinaTrasparenza\TestTesinaTrasparenza\obj\Debug\TestTesinaTrasparenza.csprojResolveAssemblyReference.cache
+C:\Users\Davide\Desktop\TestTesinaTrasparenza\TestTesinaTrasparenza\obj\Debug\TestTesinaTrasparenza.Form1.resources
+C:\Users\Davide\Desktop\TestTesinaTrasparenza\TestTesinaTrasparenza\obj\Debug\TestTesinaTrasparenza.Properties.Resources.resources
+C:\Users\Davide\Desktop\TestTesinaTrasparenza\TestTesinaTrasparenza\obj\Debug\TestTesinaTrasparenza.csproj.GenerateResource.Cache
+C:\Users\Davide\Desktop\TestTesinaTrasparenza\TestTesinaTrasparenza\obj\Debug\TestTesinaTrasparenza.exe
+C:\Users\Davide\Desktop\TestTesinaTrasparenza\TestTesinaTrasparenza\obj\Debug\TestTesinaTrasparenza.pdb
