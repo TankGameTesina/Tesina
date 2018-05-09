@@ -1,0 +1,4 @@
+C:\Users\smichelo1\Desktop\Tesina_26-03-2018\provaXNAGame\provaXNAGame\provaXNAGameContent\obj\x86\Debug\provaXNAGameContent.contentprojResolveAssemblyReference.cache
+C:\Users\Davide\Desktop\provaXNAGame\provaXNAGame\provaXNAGameContent\obj\x86\Debug\provaXNAGameContent.contentprojResolveAssemblyReference.cache
+C:\Users\smichelo1\Desktop\provaXNAGame\provaXNAGame\provaXNAGameContent\obj\x86\Debug\provaXNAGameContent.contentprojResolveAssemblyReference.cache
+F:\Tesina\provaXNAGame\provaXNAGame\provaXNAGameContent\obj\x86\Debug\provaXNAGameContent.contentprojResolveAssemblyReference.cache
