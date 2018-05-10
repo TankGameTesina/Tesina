@@ -16,11 +16,6 @@ namespace ServerChoosingDemo
 {
     public partial class Form1 : Form
     {
-
-        private const int LOCAL_PORT = 5000; //il solo host cambia l'ordine, local 5001 e remote 5000
-        private const int REMOTE_PORT = 5001;
-        private const string NOME_LDAP_DOMINIO = "LDAP://itis/DC=itis, DC=pr, DC=it";
-
         #region VARAIABILIGIOCO
         string myAddress;
         string serverAddress;
@@ -39,8 +34,13 @@ namespace ServerChoosingDemo
         EndPoint ep;
         byte[] abytRx = new byte[1024];
         byte[] abytTx = new byte[1024];
+
         int intUdpLocalPort;
         int intUdpRemotePort; //la porta IN del server
+
+        private const int LOCAL_PORT = 5000; //il solo host cambia l'ordine, local 5001 e remote 5000
+        private const int REMOTE_PORT = 5001;
+        private const string NOME_LDAP_DOMINIO = "LDAP://itis/DC=itis, DC=pr, DC=it";
         #endregion
 
         #region VARIABILISERVER
@@ -69,14 +69,27 @@ namespace ServerChoosingDemo
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            Form2 IP;
             intUdpLocalPort = LOCAL_PORT;
             intUdpRemotePort = REMOTE_PORT;
 
-            myAddress = clsWin32_Network.GetMyIp();
-            username = clsWin32_Network.GetMyHostName();
+            var app = clsWin32_Network.GetMultipleIpAddress(AddressFamily.InterNetwork);
+            
+            if (app.Count > 1)
+            {
+                IP = new Form2(app);
+                IP.ShowDialog();
+                myAddress = IP.IPScheda;
+                IP.Dispose();
+            }
+            else
+                myAddress = app[0];
+
+            username = Environment.UserName;
+
             clsWin32_Network.GetMaskBroadcast(myAddress, ref myMask, ref myBroadcast);
             players.Add(new Tank("server"));
-            //gaming = false;
+            //gaming = false;           
 
             this.Left = 0;
             this.Top = 0;

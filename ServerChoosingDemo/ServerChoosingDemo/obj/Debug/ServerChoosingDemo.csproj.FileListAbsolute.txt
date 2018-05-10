@@ -31,3 +31,4 @@ C:\Users\sstrina3\Desktop\ServerChoosingDemo\ServerChoosingDemo\obj\Debug\Server
 C:\Users\sstrina3\Desktop\ServerChoosingDemo\ServerChoosingDemo\obj\Debug\ServerChoosingDemo.csproj.GenerateResource.Cache
 C:\Users\sstrina3\Desktop\ServerChoosingDemo\ServerChoosingDemo\obj\Debug\ServerChoosingDemo.exe
 C:\Users\sstrina3\Desktop\ServerChoosingDemo\ServerChoosingDemo\obj\Debug\ServerChoosingDemo.pdb
+C:\Users\sstrina3\Desktop\ServerChoosingDemo\ServerChoosingDemo\obj\Debug\ServerChoosingDemo.Form2.resources

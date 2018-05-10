@@ -9,6 +9,7 @@ using System.Net.NetworkInformation;
 using System.Net.Sockets;
 using System.ComponentModel;
 using System.DirectoryServices;
+using System.Collections.Generic;
 
 static class clsWin32_Network
 {
@@ -42,9 +43,38 @@ static class clsWin32_Network
     [MarshalAs(UnmanagedType.LPWStr)]
     internal string sv100_name;
   }
-  #endregion
+    #endregion
 
-  public static String GetMyHostName()
+    public static List<String> GetMultipleIpAddress(AddressFamily familyAddress)
+    {
+        int i;
+        IPAddress[] IPs;
+        List<String> result = new List<String>();
+
+        try
+        {
+            IPs = Dns.GetHostAddresses(Dns.GetHostName());
+            if (IPs.Length > 0)
+            {
+                for (i = 0; i < IPs.Length; i++)
+                {
+                    if (IPs[i].AddressFamily == familyAddress)
+                    {
+                        result.Add(IPs[i].ToString());
+                    }
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            strMsg = ex.Message;
+            return null;
+        }
+
+        return result;
+    }
+
+    public static String GetMyHostName()
   {
         return Dns.GetHostName();
   }
@@ -127,7 +157,6 @@ static class clsWin32_Network
         }
     }
 
-
     // Ritorna un Arraylist che rappresenta la lista delle macchine in rete
     public static ArrayList getNetworkComputers()
   {
@@ -176,7 +205,7 @@ static class clsWin32_Network
     // Ecco la lista delle macchine
     return NomiComputers;
 
-  }
+  } //usa SMB
 
   public static ArrayList getDomainComputers(String strLDAPDomain)
   {
@@ -215,7 +244,6 @@ static class clsWin32_Network
     return NomiComputers;
 
   }
-
 
   public static int GetMaskBroadcast(String _address, ref String _mask, ref String _broadcast)
   {
@@ -265,8 +293,6 @@ static class clsWin32_Network
     strMsg = "Impossibile ricavare maschera e indirizzo broadcast";
     return 1;
   }
-
-
 
 } // della classe
 
