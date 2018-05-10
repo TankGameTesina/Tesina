@@ -412,13 +412,15 @@ namespace ServerChoosingDemo
                 if (read < write || buffer_full)
                 {
                     BeginInvoke(new del_Analisi(Analisi), buffer[read]);
-                    read++;
-                    if (read == 9999)
+                    
+                    if (read == 99)//9999
 					{
 						read = 0;
 						buffer_full = false;
 					}
-                       
+                    else
+                        read++;
+
                 }
             }
 
@@ -464,15 +466,15 @@ namespace ServerChoosingDemo
                 if (serverStatus)
                 {
                     buffer[write] = new Pacchetto(strReceived, astr[0]);
-                    write++;
 
                     lbWrite.Text = "Indice write " + write;
-                    if (write == 9999)
+                    if (write == 99)//9999
 					{
 						write = 0;
 						buffer_full = true;
 					}
-                        
+                    else
+                        write++;
                 }
                 else
                     Analisi(new Pacchetto(strReceived, astr[0]));
