@@ -413,7 +413,7 @@ namespace ServerChoosingDemo
                 {
                     BeginInvoke(new del_Analisi(Analisi), buffer[read]);
                     
-                    if (read == 99)//9999
+                    if (read == 9999)//9999
 					{
 						read = 0;
 						buffer_full = false;
@@ -468,7 +468,7 @@ namespace ServerChoosingDemo
                     buffer[write] = new Pacchetto(strReceived, astr[0]);
 
                     lbWrite.Text = "Indice write " + write;
-                    if (write == 99)//9999
+                    if (write == 9999)//9999
 					{
 						write = 0;
 						buffer_full = true;
