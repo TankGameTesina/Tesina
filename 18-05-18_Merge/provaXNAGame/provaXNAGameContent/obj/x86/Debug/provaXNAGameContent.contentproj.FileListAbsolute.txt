@@ -1,0 +1,8 @@
+C:\Users\smichelo1\Desktop\Tesina_26-03-2018\provaXNAGame\provaXNAGame\provaXNAGameContent\obj\x86\Debug\provaXNAGameContent.contentprojResolveAssemblyReference.cache
+C:\Users\Davide\Desktop\provaXNAGame\provaXNAGame\provaXNAGameContent\obj\x86\Debug\provaXNAGameContent.contentprojResolveAssemblyReference.cache
+C:\Users\smichelo1\Desktop\provaXNAGame\provaXNAGame\provaXNAGameContent\obj\x86\Debug\provaXNAGameContent.contentprojResolveAssemblyReference.cache
+F:\Tesina\provaXNAGame\provaXNAGame\provaXNAGameContent\obj\x86\Debug\provaXNAGameContent.contentprojResolveAssemblyReference.cache
+C:\Users\smichelo1\Desktop\18-05-09_MainGameXNA\provaXNAGame\provaXNAGameContent\obj\x86\Debug\provaXNAGameContent.contentprojResolveAssemblyReference.cache
+C:\Users\smichelo1\Desktop\sistemi\18-05-09_MainGameXNA\provaXNAGame\provaXNAGameContent\obj\x86\Debug\provaXNAGameContent.contentprojResolveAssemblyReference.cache
+C:\Users\smichelo1\Desktop\18-05-17_Merge\provaXNAGame\provaXNAGameContent\obj\x86\Debug\provaXNAGameContent.contentprojResolveAssemblyReference.cache
+C:\Users\gfabi\Desktop\Keep out\Scuola\Superiori\5°A INF\Tesina\Spawn\18-05-18_Merge\provaXNAGame\provaXNAGameContent\obj\x86\Debug\provaXNAGameContent.contentprojResolveAssemblyReference.cache
